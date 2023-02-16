@@ -37,3 +37,6 @@ class MainWindow(QMainWindow):
         navbar.addWidget(self.url_bar)
 
         self.browser.urlChanged.connect(self.update_url)
+    
+    def navigate_home(self):
+        self.browser.setUrl(QUrl('http://google.com'))
