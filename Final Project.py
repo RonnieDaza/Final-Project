@@ -35,3 +35,5 @@ class MainWindow(QMainWindow):
         self.url_bar = QLineEdit()
         self.url_bar.returnPressed.connect(self.navigate_to_url)
         navbar.addWidget(self.url_bar)
+
+        self.browser.urlChanged.connect(self.update_url)
