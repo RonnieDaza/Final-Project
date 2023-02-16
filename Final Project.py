@@ -23,3 +23,7 @@ class MainWindow(QMainWindow):
         forward_btn = QAction('Forward', self)
         forward_btn.triggered.connect(self.browser.forward)
         navbar.addAction(forward_btn)
+
+        reload_btn = QAction('Reload', self)
+        reload_btn.triggered.connect(self.browser.reload)
+        navbar.addAction(reload_btn)
