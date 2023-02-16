@@ -19,3 +19,7 @@ class MainWindow(QMainWindow):
         back_btn = QAction('Back', self)
         back_btn.triggered.connect(self.browser.back)
         navbar.addAction(back_btn)
+
+        forward_btn = QAction('Forward', self)
+        forward_btn.triggered.connect(self.browser.forward)
+        navbar.addAction(forward_btn)
